@@ -1,5 +1,5 @@
 const ContactPage = () => {
-  return <div>ContactPagehhththth</div>;
+  return <div>were kwushin</div>;
 };
 
 export default ContactPage;
