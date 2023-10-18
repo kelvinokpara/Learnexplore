@@ -1,14 +1,8 @@
-# Learnexplore
+# React + Vite
 
-An Educational technology built for dynamic teacher-student interaction, communication and knowledge building.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Getting started
+Currently, two official plugins are available:
 
-1. clone repository into local machine using git clone and ssh key
-2. Run command: npm i or npm install to install dependencies
-3. Run command: npm run dev
-
-# Please note
-
-Please contact the repository manager before installing dependencies
-Contact the repository manager for merging of pull requests, actions and resolving of issues
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
