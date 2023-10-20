@@ -1,5 +1,10 @@
+import Hero from "../../components/reuseableComponents/Hero/Hero";
+
 const HomePage = () => {
-  return <div>Home</div>;
+  return <div>
+    <Hero/>
+    
+  </div>;
 };
 
 export default HomePage;
