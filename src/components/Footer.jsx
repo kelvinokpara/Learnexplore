@@ -1,8 +1,11 @@
 
+<<<<<<< HEAD
 import Logo from "../assets/Icons/logo.png"
 import {BiLogoFacebookSquare, BiLogoTwitter, BiLogoInstagram} from "react-icons/bi"
 import {HiOutlineMail} from "react-icons/hi"
 import { Link } from 'react-router-dom'
+=======
+>>>>>>> 04b1ea6 (first commit)
 
 const Footer = () => {
   return (

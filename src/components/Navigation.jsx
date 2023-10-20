@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import Logo from "../assets/icons/logo.png"
 import {BiSearch} from "react-icons/bi"
@@ -6,6 +7,11 @@ import {ImCancelCircle} from "react-icons/im"
 import { navData } from "../assets/Data/navData";
 import { Link } from "react-router-dom";
 import Button from "./reuseableComponents/Button/SecBtn";
+=======
+
+import { FiSearch } from "react-icons/fi";
+
+>>>>>>> 04b1ea6 (first commit)
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
 
