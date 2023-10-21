@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className="m-0 p-0 border-b0x bg-pink-100">
       <div className="w-screen">
-        <div className="w-[300px] h-[300px] border-2 bg-red-400 mx-auto my-[100px] rounded-full bg-heroColor relative">
+        <div className="w-[300px] h-[300px] border-2 bg-blue-500 mx-auto my-[100px] rounded-full bg-heroColor relative">
           <div className="w-[169%] h-[115%] absolute ml-[-27%]  rounded-full top-0">
             <img
               src={hero_img}
@@ -37,7 +37,7 @@ const Hero = () => {
           <img
             src={polygon}
             alt="polygon"
-            className="absolute bottom-[-10%] left-[72%]"
+            className="absolute bottom-[-1%] left-[82%]"
           />
           <div className="absolute border rounded-md bg-white top-[23%] p-2 left-[-40%] h-15 mb-6 ">
             <div className="">
@@ -81,11 +81,7 @@ const Hero = () => {
                     className="absolute right-[-295%] top-[1%] "
                     alt="image"
                   />
-                  <img
-                    src={image5}
-                    className="left-[-25%]  "
-                    alt="image"
-                  />
+                  <img src={image5} className="left-[-25%]  " alt="image" />
                 </div>
               </div>
             </div>
