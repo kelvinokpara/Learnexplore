@@ -1,5 +1,5 @@
-import BlogList1 from "../../components/reuseableComponents/blogs/blog1";
-import reactIcon from "../../assets/react.svg"
+import BlogList1 from "./components/reuseableComponents/blogs/blog1";
+import reactIcon from "../../../assets"
 
 const HomePage = () => {
   return <div>Home

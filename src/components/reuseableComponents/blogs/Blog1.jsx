@@ -15,7 +15,7 @@ const BlogList1 = ({
     
     <>
     
-    {isSmallCard === "small" ? (<div>
+    {isSmallCard === "true" ? (<div>
       {/* container 2 */}
       <div className="border bg-white w-[500px] p-[15px] rounded-[20px] mb-[13px]">
         <div className="flex items-center gap-[15px]">

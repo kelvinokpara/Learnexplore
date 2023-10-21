@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 const HomePage = () => {
   return <div>
@@ -25,3 +26,5 @@ const HomePage = () => {
 };
 
 export default HomePage;
+=======
+>>>>>>> aea29f6 (first commit)
