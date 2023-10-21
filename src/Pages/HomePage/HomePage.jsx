@@ -3,17 +3,6 @@ import reactIcon from "../../assets/react.svg"
 
 const HomePage = () => {
   return <div>Home
-    <BlogList1 
-    title={"rererer"}
-    image={reactIcon}
-    profile_image={reactIcon}
-    profile_name={"ereretet"}
-    date={"gefr"}
-    text1={"fhfgsefshefshdfghsfy"}
-    text2={"ygfjysgfjsgfygfdjsgjftsegfjegdfs"}
-  
-    isSmallCard={true}
-    />
   </div>;
 };
 
