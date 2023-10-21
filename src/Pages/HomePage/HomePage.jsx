@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 const HomePage = () => {
   return <div>
@@ -28,3 +29,14 @@ const HomePage = () => {
 export default HomePage;
 =======
 >>>>>>> aea29f6 (first commit)
+=======
+import React from 'react'
+
+const HomePage = () => {
+  return (
+    <div>HomePage</div>
+  )
+}
+
+export default HomePage
+>>>>>>> 4e77acd (first commit)
