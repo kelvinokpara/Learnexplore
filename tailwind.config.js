@@ -3,11 +3,6 @@ export default {
   content: [".public/index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-<<<<<<< HEAD
-      colors:{
-        heroColor: "#7751e9",
-      }
-=======
       padding: {
         "18px": "18px",
         "30px": "30px",
@@ -16,8 +11,8 @@ export default {
         primHue: "#0AAFFF",
         borderGrey: "#BCC3D3",
         buttonText: "#495D80",
+        heroColor: "#7751e9",
       },
->>>>>>> f80f3055c4f1ea3100bc4a6b55efb906cee7cdd1
     },
   },
   plugins: [],
