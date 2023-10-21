@@ -9,20 +9,21 @@ import ResetPasswordPage from "../Pages/ResetPasswordPage/ResetPasswordPage"
 import ContactPage from "../Pages/ContactPage/ContactPage"
 import TermsAndCondition from "../Pages/Terms & Condition/TermsAndCondition"
 import PrivacyPolicy from "../Pages/PrivacyPolicyPage/PrivacyPolicy"
+import Layout from "../components/Layout/Layout"
 
 
 
 const Router = () => {
   return (
     <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/" element={ <Layout><HomePage /></Layout>} />
+        <Route path="/about" element={<Layout><AboutPage/></Layout> }/>
         <Route path="/login" element={<LoginPage/>}/>
-        <Route path="/selectSide" element={<SelectSidePage/>}/>
+        <Route path="/sign-in" element={<SelectSidePage/>}/>
         <Route path="/studentSignUp" element={<StudentSignUp/>} />
         <Route path="/teacherSignUp" element={<TeacherSignUp/>} />
         <Route path="/resetPassword" element={<ResetPasswordPage/>} />
-        <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/contact" element={ <Layout> <ContactPage/></Layout>} />
         <Route path="/terms/conditions" element={<TermsAndCondition/>} />
         <Route path="/privacy" element={<PrivacyPolicy/>} />
     </Routes>
