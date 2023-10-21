@@ -5,7 +5,7 @@ import {RiMenu4Fill} from "react-icons/ri"
 import {ImCancelCircle} from "react-icons/im"
 import { navData } from "../assets/Data/navData";
 import { Link } from "react-router-dom";
-import Button from "./reuseableComponents/button/button";
+import Button from "./reuseableComponents/Button/SecBtn";
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
 
