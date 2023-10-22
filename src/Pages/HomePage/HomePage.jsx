@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 const HomePage = () => {
   return <div>
@@ -23,6 +24,13 @@ const HomePage = () => {
     isSmallCard={true}
     />
 >>>>>>> 04b1ea6 (first commit)
+=======
+import BlogList1 from "../../components/reuseableComponents/blogs/blog1";
+import reactIcon from "../../assets/react.svg"
+
+const HomePage = () => {
+  return <div>Home
+>>>>>>> 98fceed032c0d81c1284bf6d58ca38d1745a99a1
   </div>;
 };
 

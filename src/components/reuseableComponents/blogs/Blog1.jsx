@@ -15,7 +15,11 @@ const BlogList1 = ({
     
     <>
     
+<<<<<<<< HEAD:src/components/reuseableComponents/blogs/Blog1.jsx
     {isSmallCard === "true" ? (<div>
+========
+    {isSmallCard === "small" ? (<div>
+>>>>>>>> 98fceed032c0d81c1284bf6d58ca38d1745a99a1:src/components/reuseableComponents/blogs/blog1.jsx
       {/* container 2 */}
       <div className="border bg-white w-[500px] p-[15px] rounded-[20px] mb-[13px]">
         <div className="flex items-center gap-[15px]">
