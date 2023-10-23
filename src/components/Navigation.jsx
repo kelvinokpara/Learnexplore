@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import { useState } from "react";
 import Logo from "../assets/icons/logo.png"
 import {BiSearch} from "react-icons/bi"
@@ -8,13 +7,11 @@ import {ImCancelCircle} from "react-icons/im"
 import { navData } from "../assets/Data/navData";
 import { Link } from "react-router-dom";
 import Button from "./reuseableComponents/Button/SecBtn";
-=======
-=======
->>>>>>> 98fceed032c0d81c1284bf6d58ca38d1745a99a1
 
-import { FiSearch } from "react-icons/fi";
 
->>>>>>> 04b1ea6 (first commit)
+// import { FiSearch } from "react-icons/fi";
+
+
 const Navigation = () => {
   const [toggle, setToggle] = useState(false)
 
@@ -45,7 +42,7 @@ const Navigation = () => {
               )
             })}
           </ul>
-          <div className="flex justify-center items-center mr-6 gap-4 items-center ">
+          <div className="flex justify-center items-center mr-6 gap-4">
             <Link to="sign-up">
             <Button  texts="sign-in" 
                 bg="bg-white"
