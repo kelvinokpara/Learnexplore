@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const CategoriesList = ({bg, cat, image}) => {
   return (

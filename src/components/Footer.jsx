@@ -4,6 +4,7 @@ import {BiLogoFacebookSquare, BiLogoTwitter, BiLogoInstagram} from "react-icons/
 import {HiOutlineMail} from "react-icons/hi"
 import { Link } from 'react-router-dom'
 
+
 const Footer = () => {
   return (
     <>
