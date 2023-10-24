@@ -1,15 +1,17 @@
-import React from "react";
 
-const Icons = () => {
+
+const Icons = ({icons, title}) => {
+
+  
   return (
     <div>
       <div className="flex items-center gap-[10px]">
         <img
-          src="/home/teacher.png"
+          src={icons}
           alt=""
           className="p-[10px] rounded-[20px] bg-[#f0e2c7]"
         />
-        <span>Online Teaching</span>
+        <span>{title}</span>
       </div>
     </div>
   );
