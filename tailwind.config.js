@@ -19,6 +19,8 @@ export default {
         borderGrey: "#BCC3D3",
         buttonText: "#495D80",
         heroColor: "#7751e9",
+        sidebarBg: "#1C2D41",
+        sidebarHover: "#253950ea",
       },
       padding: {
         "18px": "18px",

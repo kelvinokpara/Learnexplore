@@ -29,16 +29,16 @@ const Navigation = () => {
             <p className=" hidden lg:block font-inter font-medium text-[16px] text-#2f394b pl-4">
               Category
             </p>
-            <div className=" hidden md:flex lg:flex justify-center items-center hover:border-textHover border-2 border-borderColor rounded-2xl w-[250px]">
+            <div className=" hidden md:flex lg:flex bg-searchBg justify-center items-center hover:border-textHover border-2 border-borderColor rounded-2xl w-[250px]">
               <BiSearch className="text-xl" />
               <input
                 type="text"
-                className="p-[5px]  bg-searchBg  w-10/12 font-inter  outline-none"
+                className="p-[8px]  bg-searchBg w-10/12 font-inter  outline-none"
                 placeholder="search courses or tutor"
               />
             </div>
           </div>
-          <ul className=" hidden  lg:flex justify-center items-center gap-4 font-inter  text-textColor font-medium ">
+          <ul className=" hidden  lg:flex justify-center text-lg items-center gap-4 font-inter  text-textColor font-medium ">
             {navData.map((item) => {
               return (
                 <Link key={item.id} to={item.path}>
@@ -66,20 +66,21 @@ const Navigation = () => {
         </div>
       </header>
       {toggle ? (
-        <div className="fixed w-screen h-screen bg-white rounded top-0  right-0 duration-[850ms] z-50">
+        <div className="fixed w-screen lg:hidden h-screen bg-sidebarBg rounded top-0  right-0 duration-[950ms] z-50">
           <ul className="cursor-pointer m-6" onClick={showToggle}>
             <li className="absolute top-[20px] right-[20px]">
               <ImCancelCircle className="text-3xl text-red-500 " />
             </li>
-            <li className="flex justify-left items-center">
+            <li className="flex pb-4 justify-left items-center">
               <img src={Logo} alt="" />
-              <p className="font-sansita">LearnXplore</p>
+              <p className="font-sansita text-white">LearnXplore</p>
             </li>
+            <hr className="pb-4" />
             {navData.map((item) => {
               return (
                 <Link key={item.id} to={item.path}>
                   <li
-                    className="font-inter text-textColor font-bold p-4 hover:text-textHover"
+                    className="font-inter text-textColor rounded-lg hover:text-[#fff] w-[150px] font-bold p-4 hover:bg-sidebarHover"
                     key={item.id}
                   >
                     {item.name}
@@ -87,15 +88,15 @@ const Navigation = () => {
                 </Link>
               );
             })}
-            <div className="flex justify-center items-center hover:border-textHover border-2 border-borderColor rounded-2xl w-[250px]">
-              <BiSearch className="text-xl" />
-              <input
-                type="text"
-                className="p-[5px]  bg-searchBg  w-10/12 font-inter  outline-none"
-                placeholder="search courses or tutor"
-              />
-            </div>
           </ul>
+          <div className="flex justify-center ml-8 bg-white items-center hover:border-textHover border-2 border-borderColor rounded-2xl w-[250px]">
+            <BiSearch className="text-xl" />
+            <input
+              type="text"
+              className="p-[5px]  bg-searchBg  w-10/12 font-inter  outline-none"
+              placeholder="search courses or tutor"
+            />
+          </div>
         </div>
       ) : (
         <div className="duration-[350ms]  right-[-100%]"></div>
