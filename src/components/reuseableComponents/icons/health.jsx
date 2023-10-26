@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function health() {
+export default function Health() {
   return (
     <div className="border-2 w60 flex-col">
       <img

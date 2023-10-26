@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function congrats() {
+export default function Congrats() {
   return (
     <div className="border-2 w-72 h-20">
       <div className="flex h-10 space-x-1 mt-2 ml-2">

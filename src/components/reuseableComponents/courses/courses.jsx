@@ -28,7 +28,7 @@ const CoursesList = ({title, lessons, duration, price, image, teacher}) => {
         
                 <div className='flex justify-between items-center'>
                     <div>
-                        <p className='text-[#7887A8]'>Teach by</p>
+                        <p className='text-[#7887A8]'>Taught by</p>
                         <p className='flex items-center gap-[10px]'><img src={image} alt=''/><span>{teacher}</span></p>
                     </div>
                     <div><img src='/login-assets/shopping-cart.png' alt='' className='rounded-[15px] bg-[#FF8258] p-[12px]'/></div>
