@@ -11,16 +11,16 @@ import image3 from "../../../assets/images/image3.png";
 import image4 from "../../../assets/images/image4.png";
 import image5 from "../../../assets/images/image5.png";
 
-const Hero = () => {
+const Hero = ({mainImg}) => {
   return (
-    <div className="m-0 p-0 border-b0x bg-pink-100">
-      <div className="w-screen">
+    <div className="m-0 p-0 border-box bg-pink-100">
+      <div className="">
         <div className="w-[300px] h-[300px] border-2 bg-blue-500 mx-auto my-[100px] rounded-full bg-heroColor relative">
           <div className="w-[169%] h-[115%] absolute ml-[-27%]  rounded-full top-0">
             <img
               src={hero_img}
               alt=""
-              className=" absolute top-[-72px] h-full w-[100%] bg-cover "
+              className=" absolute top-[-72px] h-full w-full bg-cover "
             />
           </div>
           <img src={Poly} alt="polygon" className="absolute top-[-10%] " />
