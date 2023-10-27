@@ -1,73 +1,95 @@
-import React from 'react'
+import Logo from "../assets/Icons/logo.png";
+import {
+  BiLogoFacebookSquare,
+  BiLogoTwitter,
+  BiLogoInstagram,
+} from "react-icons/bi";
+import { FiMail } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
-    <div className='bg-[#06061d]'>
-        <div className='flex bg-[#06061d] justify-center pl-[30px]'>
-    <div className='bg-[#06061d] mb-[50px] mt-[50px]'>
-            <div className='flex items-center gap-2 mb-[30px]'>
-            <img src='/navigation/logo.png' alt='logo'/>
-            <div className='font-Sansita text-[white] text-[24px]'>Learnxplore</div>
+    <>
+      <footer className="bg-footerBg p-4">
+        <div className="mx-12 my-0">
+          <div className="flex justify-left mb-4 items-center">
+            <img src={Logo} alt="logo" />
+            <p className="font-sansita font-bold text-white text-[20px]">
+              Learnxplore
+            </p>
+          </div>
+
+          <div className=" md:flex lg:flex flex-wrap justify-between items-center font-inter font-medium">
+            <ul className="text-[grey] mb-4  cursor-pointer">
+              <Link to="/">
+                <li className="hover:text-white pb-2">Home</li>
+              </Link>
+              <Link to="/about">
+                <li className="hover:text-white pb-2 ">About us</li>
+              </Link>
+              <li className="hover:text-white">Category</li>
+            </ul>
+            <ul className="text-[grey] mb-4  cursor-pointer">
+              <li className="hover:text-white pb-2">Blogs</li>
+              <li className="hover:text-white pb-2 ">Pricing</li>
+              <Link to="/contact">
+                <li className="hover:text-white">Contact</li>
+              </Link>
+            </ul>
+            <ul className="text-[grey] mb-6  cursor-pointer">
+              <Link to="/privacy">
+                <li className="hover:text-white pb-2 ">Privacy Policy</li>
+              </Link>
+              <Link to="terms/condition">
+                <li className="hover:text-white pb-2">Terms & Conditions</li>
+              </Link>
+            </ul>
+
+            <div className="mb-4">
+              <p className="text-white pb-4 font-inter">
+                Subscribe to Newsletter
+              </p>
+              <div className="bg-[#181717] flex items-center gap-4 rounded-[15px] w-[200px] md:w-[300px] lg:w-[350px] pl-[20px] h-[45px]">
+                <FiMail className="text-white text-2xl" />
+                <input
+                  type="text"
+                  placeholder="Email id"
+                  className="text-[white] outline-none bg-transparent w-[100px] md:w-[200px] lg:w-[200px]  h-[33px]"
+                />
+                <button className="text-white bg-gradient-to-r from-[#bebef2fa] to-[#0AAFFF] p-2 pl-[20px] pr-[20px] rounded-[10px]">
+                  Send
+                </button>
+              </div>
             </div>
 
-            <div className='flex gap-[110px]'>
-                {/* content 1 */}
-                <div className=''>
-                    <ul className='text-[grey] cursor-pointer'>
-                        <li className='hover:text-white mb-3'>Home</li>
-                        <li className='hover:text-white mb-3'>About us</li>
-                        <li className='hover:text-white'>Category</li>
-                    </ul>
+            <div className="mb-8">
+              <p className="text-white mb-4 lg:text-right">Social links</p>
+              <div className="flex items-center gap-4">
+                <div className="w-[40px] cursor-pointer relative h-[40px] rounded-full bg-[#181717]">
+                  <BiLogoFacebookSquare className="text-2xl text-white absolute top-2 left-2" />
                 </div>
-                        
-                {/* content 2 */}
-                <div>
-                    <ul className='text-[grey] cursor-pointer'>
-                        <li className='hover:text-white mb-3'>Blogs</li>
-                        <li className='hover:text-white mb-3'>Pricing</li>
-                        <li className='hover:text-white'>Contact</li>
-                    </ul>
+                <div className="w-[40px] cursor-pointer relative h-[40px] rounded-full bg-[#181717]">
+                  <BiLogoTwitter className="text-2xl text-white absolute top-2 left-2" />
                 </div>
-
-                {/* content 3 */}
-                <div>
-                    <ul className='text-[grey] cursor-pointer'>
-                        <li className='hover:text-white mb-3'>Privacy Policy</li>
-                        <li className='hover:text-white mb-3'>Terms & Conditions</li>
-                    </ul>
+                <div className="w-[40px] cursor-pointer relative h-[40px] rounded-full bg-[#181717]">
+                  <BiLogoInstagram className="text-2xl text-white absolute top-2 left-2" />
                 </div>
-                
-                {/* content 4 */}
-                <div className='mt-[6px]'>
-                    <p className='text-white mb-[15px]'>Subcribe to newsletter</p>
-                    <div className='bg-[#181717] flex items-center rounded-[15px] w-[300px] pl-[20px] h-[50px]'>
-                        <img src='/footer/sms.png' alt='' className='pr-[7px]'/>
-                        <input type='text' placeholder='Email id' className='text-[white] bg-transparent w-[200px] h-[35px]'/>
-                        <button className=' text-white bg-gradient-to-r from-[#bebef2fa] to-[#0AAFFF] p-2 pl-[20px] pr-[20px] rounded-[10px]'>Send</button>
-                    </div>
-                </div>
-
-                {/* content 5 */}
-                <div className='mt-[6px]'>
-                    <p className='text-white mb-[25px]'>Social links</p>
-                    <div className='flex gap-6'>
-                        <img src='/footer/facebook.png' alt='facebooklogo' className='p-[7px] bg-[#1f1e1e] rounded-[100%]'/>
-                        <img src='/footer/twitter.png' alt='twitterlogo' className='p-[7px] bg-[#1d1c1c] rounded-[100%]'/>
-                        <img src='/footer/instagram.png' alt='instagramlogo' className='p-[7px] bg-[#1e1e1e] rounded-[100%]'/>
-                    </div>
-                </div>
-                
+              </div>
             </div>
-    </div>
-    
-    </div>
-    <hr className='text-[#242323] pb-5'/>
-                <div className='flex justify-center text-[grey] gap-[570px] pb-5'>
-                <span className=''>&copy Copyright 2022. Learnxplore All Rights Reserved</span>
-                <span className=''>Design By DeleMontStudio</span>
-                </div>
-    </div>
-  )
-}
+          </div>
+        </div>
 
-export default Footer
+        <hr className="border-[#2f394b] mb-4 border-[1px] " />
+        <div className="flex justify-between text-[12px] md:text-[18px] lg:text-[18px] flex-wrap items-center  text-[grey] mx-12 my-0">
+          <span className="font-inter pb-2">
+            &copy; Copyright 2022. Learnxplore All Rights Reserved
+          </span>
+          <span className="font-inter">Design By DeleMontStudio</span>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
