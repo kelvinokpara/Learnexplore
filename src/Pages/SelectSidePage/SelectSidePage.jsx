@@ -1,64 +1,40 @@
-import Poly from "../../assets/images/Poly.png"
-import polygon from "../../../assets/images/polygon.png";
-import book from "../../../assets/Images/position-component/position-book.png";
-import esc from "../../../assets/images/esc.png";
-import tabLeft from "../../../assets/Images/position-component/tab-left-1.png";
-import tabRight from "../../../assets/Images/position-component/tab-right-1.png";
-import tabBottom from "../../../assets/Images/position-component/tab-bottom-1.png";
+import Hero from "../../components/reuseableComponents/Hero/Hero";
+import student from "../../assets/Icons/userlog-icons/student.png";
+import teacher from "../../assets/Icons/userlog-icons/teacher.png";
+import Button from "../../components/reuseableComponents/button/button";
 
-const SelectSidePage = ({ mainImg, leftTab, rightTab, bottomTab, bg }) => {
+const SelectSidePage = () => {
   return (
-    <div
-      className={`w-[650px] h-[650px] grid-center rounded-3xl ${
-        bg ?? "bg-pink-100"
-      }`}
-    >
-      <div className="w-[280px] h-[280px] flex justify-center items-end rounded-full bg-heroColor relative">
-        <div className=" relative w-full h-[130%] grid-center overflow-hidden rounded-full">
-          <img src={mainImg} alt="" className="w-11/12 object-contain" />
-        </div>
-
-        <img
-          src={Poly}
-          alt="polygon"
-          className="absolute top-[-10%] left-[10px]"
-        />
-        <img src={book} alt="book" className="absolute top-[-15%] right-0" />
-        <img
-          src={esc}
-          alt="esclipse"
-          className="absolute bottom-[20px] left-[100%] w-14"
-        />
-        <img
-          src={polygon}
-          alt="polygon"
-          className="absolute bottom-[-1%] right-[10px]"
-        />
-        {leftTab ? (
-          leftTab
-        ) : (
-          <div className="absolute border rounded-md bg-white top-[23%] left-[-40%]  mb-6 ">
-            <img src={tabLeft} alt="health" className=" w-40" />
-          </div>
-        )}
-
-        {rightTab ? (
-          rightTab
-        ) : (
-          <div className="absolute top-[25%] right-[-45%]">
-            <img src={tabRight} alt="health" className=" w-48" />
-          </div>
-        )}
-        {bottomTab ? (
-          bottomTab
-        ) : (
-          <div className="absolute w-52 bottom-[-20%] left-10  ">
-            <img src={tabBottom} alt="" />
-          </div>
-        )}
+    <div className="flex w-[screen]">
+      <div className="w-2/4">
+        <Hero />
       </div>
+      <div>
+        <div className="flex flex-col ml-auto mr-auto">
+          <p className="mb-[27px]">Back</p>
+          <p className="font-[Sansita] text-[44px] mb-[27px]">Select User Category</p>
 
-      {/*  */}
+          <div className="flex items-center font-[poppins] gap-[30px] border rounded-[20px] w-[500px] h-[130px] mb-[27px]">
+            <img src={student} alt="student" />
+            <span className="text-[28px] font-[600]">Student</span>
+          </div>
+
+          <div className="flex items-center font-[poppins] gap-[30px] border rounded-[20px] w-[500px] h-[130px] mb-[27px]">
+            <img src={teacher} alt="teacher" />
+            <span className="text-[28px] font-[600]">Teacher</span>
+          </div>
+
+          {/* <button className="">Signup</button> */}
+          <Button width="full" defButton="blue">Sign up</Button>
+          <div className="mt-[27px] font-[400] font-[poppins] text-[16px] gap-[20px] flex text-center justify-center">
+            <span className="">Already have an account?</span>
+           
+              <span className="text-[red]"><a href="/login">Login </a></span>
+           
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 };

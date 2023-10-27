@@ -20,6 +20,7 @@ const Button = ({
       {icon_L ? <img src={icon_L} alt="" className="gap-x-1" /> : ""}
       {children ?? ""}
       {icon_R ? <img src={icon_R} alt="" className="gap-x-1" /> : ""}
+      
     </button>
   );
 };

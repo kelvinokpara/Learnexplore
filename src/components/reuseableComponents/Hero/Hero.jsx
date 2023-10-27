@@ -9,7 +9,7 @@ import tabBottom from "../../../assets/Images/position-component/tab-bottom-1.pn
 const Hero = ({ mainImg, leftTab, rightTab, bottomTab, bg }) => {
   return (
     <div
-      className={`w-[650px] h-[650px] grid-center rounded-3xl ${
+      className={`w-full h-[650px] grid-center rounded-3xl ${
         bg ?? "bg-pink-100"
       }`}
     >
