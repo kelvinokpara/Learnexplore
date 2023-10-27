@@ -1,5 +1,11 @@
+import SelectSidePage from "../SelectSidePage/SelectSidePage";
+
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <div>
+    <SelectSidePage/>
+    
+  </div>;
 };
 
 export default HomePage;
