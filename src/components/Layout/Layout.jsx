@@ -1,16 +1,18 @@
-import React from 'react'
-import Navigation from "../Navigation"
-import Footer from '../Footer'
+import Navigation from "../Navigation";
+import Footer from "../Footer";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div>
-        <Navigation/>
-        <main className='min-h-[70vh]'>{children}</main>
-        <Footer/>
+      <div className="fixed top-0 z-10 w-screen">
+        <Navigation />
+      </div>
+      <main className=" mt-24 min-h-[70vh]">{children}</main>
+      <div>
+        <Footer />
+      </div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
