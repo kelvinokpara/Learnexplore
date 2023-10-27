@@ -1,3 +1,6 @@
+import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
+import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
+
 const LoginPage = () => {
   return (
     <div>
