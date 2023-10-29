@@ -44,7 +44,7 @@ const Router = () => {
           </Layout>
         }
       />
-      <Route path="/terms-conditions" element={<TermsAndCondition />} />
+      <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
     </Routes>
   );
