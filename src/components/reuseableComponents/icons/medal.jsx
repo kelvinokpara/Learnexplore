@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function medal() {
+export default function Medal() {
   return (
     <div className="border-4 w-60 h-16 border-r-5">
       <div className="flex h-10 space-x-2 mt-1 ml-2">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function curriculum() {
+export default function Curriculum() {
   return (
     <div className="border-2 w-64 h-20 border-r-5">
       <div className="flex h-10 space-x-1 mt-2 ml-2">
