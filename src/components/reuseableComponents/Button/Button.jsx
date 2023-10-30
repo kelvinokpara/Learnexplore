@@ -4,6 +4,8 @@ const Button = ({
   defButton = "def",
   icon_L,
   icon_R,
+  onClick,
+  type
 }) => {
   return (
     <button
@@ -16,6 +18,7 @@ const Button = ({
           ? "btnGradient2 text-white"
           : "border text-textColorGrey"
       }`}
+      onClick={onClick}
     >
       {icon_L ? <img src={icon_L} alt="" className="gap-x-1" /> : ""}
       {children ?? ""}
