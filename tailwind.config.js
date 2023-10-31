@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sansita: "Sansita",
         inter: "Inter",
+        poppins:"Poppins",
       },
       colors: {
         borderColor: "#e6e9f0",

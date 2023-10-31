@@ -58,7 +58,7 @@ const Navigation = () => {
             </Link>
           </div>
         </nav>
-        <div className="absolute top-[27px] right-[10px]  lg:hidden">
+        <div className="absolute top-[27px] right-[15px]  lg:hidden">
           <RiMenu4Fill
             className="text-3xl cursor-pointer"
             onClick={showToggle}
@@ -66,7 +66,7 @@ const Navigation = () => {
         </div>
       </header>
       {toggle ? (
-        <div className="fixed w-screen lg:hidden h-screen bg-sidebarBg rounded top-0  right-0 duration-[950ms] z-50">
+        <div className="fixed w-screen lg:hidden h-screen bg-sidebarBg rounded top-0  right-0 duration-[950ms] z-90">
           <ul className="cursor-pointer m-6" onClick={showToggle}>
             <li className="absolute top-[20px] right-[20px]">
               <ImCancelCircle className="text-3xl text-red-500 " />

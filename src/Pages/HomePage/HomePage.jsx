@@ -6,7 +6,7 @@ const HomePage = () => {
     <div>
       <SelectSidePage />
       <div className="w-2/5">
-        <Input type={"text"} useType="contact" label={"Message"} />
+        <Input type={"text"} useType="auth" label={"email"} />
       </div>
     </div>
   );
