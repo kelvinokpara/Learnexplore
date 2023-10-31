@@ -11,6 +11,7 @@ export default {
         borderColor: "#e6e9f0",
         searchBg: "#f8f9fc",
         textColor: "#8392A5",
+        textColorGrey: "#2F394B",
         textColorGrey: "#495D80",
         textHover: "#0AAFFF",
         loginBg: "#0AAFFF",
