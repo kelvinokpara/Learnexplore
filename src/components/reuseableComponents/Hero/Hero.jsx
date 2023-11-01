@@ -6,6 +6,7 @@ import tabLeft from "../../../assets/Images/position-component/tab-left-1.png";
 import tabRight from "../../../assets/Images/position-component/tab-right-1.png";
 import tabBottom from "../../../assets/Images/position-component/tab-bottom-1.png";
 
+
 const Hero = ({ mainImg, leftTab, rightTab, bottomTab, bg }) => {
   return (
     <div
