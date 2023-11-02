@@ -1,7 +1,8 @@
+import Termsncondition from "../../components/Privacy/Termsncondition";
+
 const TermsAndCondition = () => {
-  return <div>hello
-    hiiiiiii
-    heyyyyyyyyyy
+  return <div>
+    <Termsncondition />
   </div>;
 };
 
