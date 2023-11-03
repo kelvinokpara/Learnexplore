@@ -1,9 +1,9 @@
+import Aboutside from "../../components/About/Aboutside"
 
 const AboutPage = () => {
   return (
     <div>
-      
-     AboutPage
+      <Aboutside/>
     </div>
   )
 }
