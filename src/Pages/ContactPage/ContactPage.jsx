@@ -1,7 +1,9 @@
+import React from "react";
+import Contactus from "../../components/Contact/Contactus";
 
 const ContactPage = () => {
   return <div>
-   ContactPage
+    <Contactus />
   </div>;
 };
 
