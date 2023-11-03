@@ -14,6 +14,7 @@ export default {
         textColor: "#8392A5",
         textColorGrey: "#2F394B",
         textColorGrey: "#495D80",
+        bgGray1:"#FBFBFB",
         textHover: "#0AAFFF",
         loginBg: "#0AAFFF",
         footerBg: "#06061d",
@@ -25,6 +26,7 @@ export default {
         sidebarHover: "#253950ea",
         textOrange: " #FF7D51",
         textLightBlue: "#0AAFFF",
+        textWhite: "#F9F9F9",
       },
       padding: {
         "18px": "18px",
@@ -32,6 +34,7 @@ export default {
       },
       backgroundImage: {
         bgImg1: "url('/src/assets/images/contact-hero.png')",
+        bgImg2: "url('/src/assets/images/contact-us-bg.png')",
       },
     },
   },
