@@ -1,12 +1,12 @@
 import Input from "../../Components/reuseableComponents/inputs/Input";
-import SelectSidePage from "../SelectSidePage/SelectSidePage";
+import CiMail from "react-icons/ci";
 
 const HomePage = () => {
   return (
     <div>
-      <SelectSidePage />
       <div className="w-2/5">
         <Input type={"text"} useType="auth" label={"email"} />
+        <CiMail />
       </div>
     </div>
   );
