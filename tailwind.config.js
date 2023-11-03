@@ -14,7 +14,7 @@ export default {
         textColor: "#8392A5",
         textColorGrey: "#2F394B",
         textColorGrey: "#495D80",
-        bgGray1:"#FBFBFB",
+        bgGray1: "#FBFBFB",
         textHover: "#0AAFFF",
         loginBg: "#0AAFFF",
         footerBg: "#06061d",
@@ -27,6 +27,7 @@ export default {
         textOrange: " #FF7D51",
         textLightBlue: "#0AAFFF",
         textWhite: "#F9F9F9",
+        colorYellow: "#F9A31E",
       },
       padding: {
         "18px": "18px",
