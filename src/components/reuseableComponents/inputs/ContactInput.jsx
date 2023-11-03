@@ -1,5 +1,5 @@
-import React from 'react';
-import { BiEnvelope } from 'react-icons/bi';
+import React from "react";
+import { BiEnvelope } from "react-icons/bi";
 
 const ContactInput = ({ placeholder }) => {
   return (
