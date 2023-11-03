@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         sansita: "Sansita",
         inter: "Inter",
-        poppins:"Poppins",
+        poppins: "Poppins",
       },
       colors: {
         borderColor: "#e6e9f0",
@@ -23,10 +23,15 @@ export default {
         heroColor: "#7751e9",
         sidebarBg: "#1C2D41",
         sidebarHover: "#253950ea",
+        textOrange: " #FF7D51",
+        textLightBlue: "#0AAFFF",
       },
       padding: {
         "18px": "18px",
         "30px": "30px",
+      },
+      backgroundImage: {
+        bgImg1: "url('/src/assets/images/contact-hero.png')",
       },
     },
   },
