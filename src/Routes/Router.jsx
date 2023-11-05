@@ -10,6 +10,7 @@ import ContactPage from "../Pages/ContactPage/ContactPage";
 import TermsAndCondition from "../Pages/Terms & Condition/TermsAndCondition";
 import PrivacyPolicy from "../Pages/PrivacyPolicyPage/PrivacyPolicy";
 import Layout from "../components/Layout/Layout";
+import PaymentPage from "../Pages/PaymentPage/PaymentPage";
 
 const Router = () => {
   return (
@@ -44,6 +45,17 @@ const Router = () => {
           </Layout>
         }
       />
+
+      <Route
+        path="/payment"
+        element={
+          <Layout>
+            {" "}
+            <PaymentPage />
+          </Layout>
+        }
+      />
+
       <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
     </Routes>
