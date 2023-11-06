@@ -10,6 +10,7 @@ import ContactPage from "../Pages/ContactPage/ContactPage";
 import TermsAndCondition from "../Pages/Terms & Condition/TermsAndCondition";
 import PrivacyPolicy from "../Pages/PrivacyPolicyPage/PrivacyPolicy";
 import Layout from "../components/Layout/Layout";
+import BlogPage from "../Pages/BlogPage/BlogPage";
 
 const Router = () => {
   return (
@@ -41,6 +42,15 @@ const Router = () => {
           <Layout>
             {" "}
             <ContactPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/blog"
+        element={
+          <Layout>
+            {" "}
+            <BlogPage />
           </Layout>
         }
       />

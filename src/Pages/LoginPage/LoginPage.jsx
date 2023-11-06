@@ -1,10 +1,11 @@
-import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
-import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
+// import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
+// import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
+import Login from "../../components/Login/Login";
 
 const LoginPage = () => {
   return (
     <div>
-      <h1>LOGIN PAGE</h1>
+      <Login/>
     </div>
   );
 };
