@@ -24,9 +24,12 @@ export default {
         heroColor: "#7751e9",
         sidebarBg: "#1C2D41",
         sidebarHover: "#253950ea",
+        studentHue:"#F9A31E",
+        teacherHue: "#033631",
         textOrange: " #FF7D51",
         textLightBlue: "#0AAFFF",
         textWhite: "#F9F9F9",
+
       },
       padding: {
         "18px": "18px",
