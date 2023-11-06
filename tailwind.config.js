@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         sansita: "Sansita",
         inter: "Inter",
-        poppins:"Poppins",
+        poppins: "Poppins",
       },
       colors: {
         borderColor: "#e6e9f0",
@@ -14,6 +14,7 @@ export default {
         textColor: "#8392A5",
         textColorGrey: "#2F394B",
         textColorGrey: "#495D80",
+        bgGray1:"#FBFBFB",
         textHover: "#0AAFFF",
         loginBg: "#0AAFFF",
         footerBg: "#06061d",
@@ -23,12 +24,14 @@ export default {
         heroColor: "#7751e9",
         sidebarBg: "#1C2D41",
         sidebarHover: "#253950ea",
-        studentHue:"#F9A31E",
-        teacherHue: "#033631"
       },
       padding: {
         "18px": "18px",
         "30px": "30px",
+      },
+      backgroundImage: {
+        bgImg1: "url('/src/assets/images/contact-hero.png')",
+        bgImg2: "url('/src/assets/images/contact-us-bg.png')",
       },
     },
   },

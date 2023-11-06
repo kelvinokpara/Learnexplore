@@ -35,7 +35,7 @@ const ResetPassword = () => {
      setResetPassword(true)
   }
   return (
-    <div className="p-0 m-0 border-box">
+    <div className="p-0 m-10 border-box">
       <div className="flex justify-center  flex-wrap items-center w-10/12 mx-auto my-0 h-[500px]">
         <div className="w-[50%] h-full hidden md:flex lg:flex">
           <div className="w-full h-full  rounded-lg">
@@ -61,6 +61,7 @@ const ResetPassword = () => {
                   onChange={emailHandler}
                   useType="auth"
                   label={"Email Address"}
+                  placeHolder={"Email"}
                 />
               </div>
               <p className="text-xs pb-4 text-red-400 font-poppins italic">{error}</p>
