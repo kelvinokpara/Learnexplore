@@ -1,5 +1,6 @@
 import { blogCategoryData } from "../../assets/Data/blogData";
 import BlogList1 from "../reuseableComponents/blogs/blog1";
+import { blogPageData } from "../../assets/Data/blogPageData";
 
 const Blog = () => {
   return (
@@ -17,21 +18,26 @@ const Blog = () => {
       ))}
       </div>
 
-      
-    {/* <BlogList1 
-    title={"rererer"}
-    image={}
-    profile_image={}
-    profile_name={"ereretet"}
-    date={"gefr"}
-    text1={"fhfgsefshefshdfghsfy"}
-    text2={"ygfjysgfjsgfygfdjsgjftsegfjegdfs"}
-  
-    isSmallCard={true}
-    /> */}
+      <div className="flex flex-wrap justify-center gap-[20px]">
+      {blogPageData && blogPageData.map((blog) => (
 
+<BlogList1 
+key={blog.id}
+title={blog.title}
+image={blog.image}
+profile_image={blog.profile_image}
+profile_name={blog.profile_name}
+date={blog.date}
+text1={blog.text1}
+text2={blog.text2}
 
-export default HomePage;
+isSmallCard={false}
+/>
+
+))}
+
+      </div>
+
 
 
       

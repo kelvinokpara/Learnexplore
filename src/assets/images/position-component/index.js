@@ -5,7 +5,7 @@ import positionBook from "./position-book.png";
 import positionBoy1 from "./position-boy1.png";
 import positionBoy2 from "./position-boy2.png";
 import positionEllipse from "./position-ellipse.png";
-import positiongirl1 from "./position-girl1.png";
+import positiongirl1 from "./positiongirl1.png";
 import positiongirl2 from "./position-girl2.png";
 import positionPolygonBlue from "./position-polygon-blue.png";
 import positionPolygonRed from "./position-polygon-red.png";

@@ -1,4 +1,3 @@
-import React from "react";
 
 const BlogList1 = ({
   title,
@@ -18,9 +17,9 @@ const BlogList1 = ({
     {isSmallCard === true ? (<div>
 
       {/* container 2 */}
-      <div className="border bg-white w-[500px] p-[15px] rounded-[20px] mb-[13px]">
+      <div className="border bg-white w-[390px] p-[15px] rounded-[20px] mb-[13px]">
         <div className="flex items-center gap-[15px]">
-          <img src="/home/blog-img3.png" alt="" />
+          <img src={image} alt="" />
           <div>
             <p className="text-[22px] font-semibold">{title}</p>
             <p className="text-[#7887A8] text-[16px] text-ellipsis">{text1}</p>
