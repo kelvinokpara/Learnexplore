@@ -157,7 +157,7 @@ const Aboutside = () => {
                 etiam dignissim diam quis enim lobortis scelerisque fermentum
                 dui
               </p>
-              <div className="inline">
+              <div className="pt-2">
                 <Button defButton="blue">Conact Us</Button>
               </div>
             </div>

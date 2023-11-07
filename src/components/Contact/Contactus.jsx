@@ -1,24 +1,26 @@
-import React from 'react';
+import React from "react";
 import contactBg1 from "../../assets/images/contact-us-bg.png";
-import mailimage from '../../assets/Icons/contact-icons/contact-mail.png';
-import phoneimage from '../../assets/Icons/contact-icons/contact-phone.png';
-import faceimage from '../../assets/Icons/contact-icons/contact-facebook.png';
-import twitterimage from '../../assets/Icons/contact-icons/contact-twitter.png';
-import instagramimage from '../../assets/Icons/contact-icons/contact-instagram.png';
-import Button from '../reuseableComponents/Button/Button';
-import Input from '../../components/reuseableComponents/inputs/Input'
+import mailimage from "../../assets/Icons/contact-icons/contact-mail.png";
+import phoneimage from "../../assets/Icons/contact-icons/contact-phone.png";
+import faceimage from "../../assets/Icons/contact-icons/contact-facebook.png";
+import twitterimage from "../../assets/Icons/contact-icons/contact-twitter.png";
+import instagramimage from "../../assets/Icons/contact-icons/contact-instagram.png";
+import Button from "../reuseableComponents/Button/Button";
+import Input from "../../components/reuseableComponents/inputs/Input";
+import { CiMail } from "react-icons/ci";
+import { HiOutlineUser } from "react-icons/hi";
 
 const contactus = () => {
   return (
     <div className=" w-screen  min-h-screen flex flex-col gap-40 px-36">
-      <section className="bg-slate-500 relative pt-[105px] pl-[70px] ">
+      <section className=" relative pt-[105px] pl-[70px] ">
         <img
           src={contactBg1}
           alt=""
           className="w-[150%] absolute top-0 left-0 right-0 bottom-0"
         />
         <div className="flex align-middle justify-center bottom-[40px] gap-28 relative z-10 text-white">
-          <div className="w-8/12">
+          <div className="">
             <div className="">
               <b className="text-[64px] font-poppins font-bold">Contact Us</b>
               <p className="font-inter text-base font-normal mt-4">
@@ -36,7 +38,7 @@ const contactus = () => {
                 </div>
                 <div className="ml-32">
                   <p>Social Links</p>
-                  <div className="flex">
+                  <div className="flex gap-4">
                     <img src={faceimage} alt="facebooklogo" />
                     <img src={twitterimage} alt="twiiterlogo" />
                     <img src={instagramimage} alt="insagramlogo" />
@@ -58,21 +60,53 @@ const contactus = () => {
               <p className="font-inter text-[18px] font-medium">
                 Subscribe to newsletter
               </p>
-              <input
-                type="placeholder"
-                className="text-white bg-blue-700"
-              ></input>
+              <div className="py-1 px-1 pl-3 flex items-center bg-white rounded-full w-80 h-12">
+                <input
+                  type="text"
+                  placeholder="Email Id"
+                  className=" w-full  bg-white outline-none"
+                />
+                <Button defButton="blue">Send</Button>
+              </div>
             </div>
           </div>
           <div className="">
-            ajsdsfSEBMVsdbvmbggQGASVHMAGCNMGVJSCHGJHAGJCH
-            <Input />
+            <div className="bg-opacity-10 bg-white mr-5">
+              <div className="w-[450px] p-4">
+                <Input
+                  type={"text"}
+                  useType="contact"
+                  label={"Fullname"}
+                  placeHolder={"John Doe"}
+                  icon={<HiOutlineUser />}
+                />
+                <Input
+                  type={"text"}
+                  useType="contact"
+                  label={"Email address"}
+                  placeHolder={"123@example.com"}
+                  icon={<CiMail />}
+                />
+                <Input
+                  type={"text"}
+                  useType="contact"
+                  label={"subject"}
+                  placeHolder={"Enter your motive of message"}
+                />
+                <Input
+                  type={"text"}
+                  useType="textarea"
+                  label={"Message"}
+                  placeHolder={"Enter your message"}
+                  icon={<CiMail />}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
 
-export default contactus
-
+export default contactus;

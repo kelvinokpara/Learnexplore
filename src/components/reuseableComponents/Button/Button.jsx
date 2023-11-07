@@ -9,7 +9,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`inline-flex items-center justify-center py-2 px-3 lg:py-4 lg:px-7 rounded-full text-xs sm:text-base lg:text-lg font-medium ${
+      className={`inline-flex items-center justify-center py-2 px-3 lg:py-2 lg:px-7 rounded-full text-xs sm:text-base lg:text-base font-medium ${
         width ? "w-full" : ""
       } ${
         defButton === "blue"
