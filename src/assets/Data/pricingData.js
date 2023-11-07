@@ -49,14 +49,14 @@ export const pricingData = [
 ];
 
 export const checkoutPriceData = [
-  { label: "Single Course", desc: "Purchase only this course.", price: "20" },
-  { label: "Monthly", desc: "Pay monthly cancel anytime.", price: "20" },
-  { label: "Yearly", desc: "Pay monthly cancel anytime.", price: "48" },
+  {id:1, label: "Single Course", desc: "Purchase only this course.", price: "20",isChecked:false },
+  {id:2, label: "Monthly", desc: "Pay monthly cancel anytime.", price: "50",isChecked:false  },
+  {id:3, label: "Yearly", desc: "Pay monthly cancel anytime.", price: "48",isChecked:false  },
 ];
 
 export const paymentMethodData = [
-  { label: "UPI", icon: { UPI } },
-  { label: "Credit Card", icon: { mastercard } },
-  { label: "Paytm", icon: { paytm } },
-  { label: "Mobile Wallet", icon: { amazonpay } },
+  {id:1, label: "UPI", icon:  UPI , checked:false },
+  {id:2, label: "Credit Card", icon:  mastercard ,checked:false },
+  {id:3, label: "Paytm", icon:  paytm ,checked:false },
+  { id:4,label: "Mobile Wallet", icon:  amazonpay ,checked:false},
 ];
