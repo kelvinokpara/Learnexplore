@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-=======
 // import Checkout from "../../components/Payments/Checkout";
 // import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
 // import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
 import Hero from "../../components/reuseableComponents/Hero/Hero";
 import { positionBoy1 } from "../../assets/images/position-component";
->>>>>>> a9b55c33e65accfadc435ee0f6395e9257b9cc33
 import {
   FaAngleLeft,
   FaApple,
