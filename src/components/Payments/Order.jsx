@@ -1,9 +1,18 @@
 import Geo from "../../assets/Icons/payment-icons/geo.png";
 import Crown from "../../assets/Icons/payment-icons/crown.png";
-const Order = ({p,singlePayment=false}) => {
+import Logo from "../../assets/icons/logo.png";
+import Card from "../../assets/Icons/payment-icons/mastercard.png"
+const Order = ({p,img,singlePayment=true}) => {
   return (
     <div className="w-full h-full">
       <p className="font-poppins font-semibold p-2">Order Details</p>
+      {singlePayment ? "" :  <div className="flex justify-start m-2 items-center">
+              <img src={Logo} alt="" className="w-[20px] h-[20px]" />
+              <p className="font-sansita font-bold pb-2 text-[16px]">
+                LearnXplore
+              </p>
+            </div> }
+     
       
       <div className="flex justify-between m-2">
       {singlePayment ? (
@@ -17,6 +26,7 @@ const Order = ({p,singlePayment=false}) => {
          </p>
        </div>
       ):(
+        
         <div className="flex items-center pb-2">
         <div className="w-[30px] h-[30px]  rounded-md bg-[#ff7d51]">
           <img src={Crown} className="w-5/6 h-5/6 mx-auto" alt="" />
@@ -26,6 +36,7 @@ const Order = ({p,singlePayment=false}) => {
           <span className="font-inter text-xs text-[#f9a31e]">Membership plan</span>
         </p>
       </div>
+
       )}
        
         <div>
@@ -50,7 +61,14 @@ const Order = ({p,singlePayment=false}) => {
             <p className="font-inter text-[#f9a31e] text-sm">20.00$</p>
         </span>
       </div>
-      <p>Payment Method</p>
+      <p className="font-poppins font-semibold p-2">Payment Details</p>
+      <div className="w-5/6 mx-auto flex justify-between">
+        <div className="flex justify-start items-center">
+           { <img src={ img ? img : Card} alt="" className="w-[30px]"/>}
+            <p className="text-[#7887a8] font-poppins text-sm">**** **** **** 3345</p>
+        </div>
+        <p className="text-[#ff7d51] font-poppins cursor-pointer pb-4 text-sm">Change</p>
+      </div>
     </div>
   );
 };
