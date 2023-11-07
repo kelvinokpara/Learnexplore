@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// import Checkout from "../../components/Payments/Checkout";
+// import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
+// import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
+import Hero from "../../components/reuseableComponents/Hero/Hero";
+import { positionBoy1 } from "../../assets/images/position-component";
+>>>>>>> a9b55c33e65accfadc435ee0f6395e9257b9cc33
 import {
   FaAngleLeft,
   FaApple,
@@ -6,15 +14,13 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Hero from "../../Components/reuseableComponents/Hero/Hero";
-import studentSignUpImage from "../../assets/images/position-component/position-boy1.png";
-// import tabLeft from "../../assets/images/position-component/tab-left-2.png";
-const ContactPage = () => {
+
+const LoginPage = () => {
   return (
     <div className="md:flex sm:grid w-full ">
       <div className=" w-6/12">
         <Hero
-          mainImg={studentSignUpImage}
+          mainImg={positionBoy1}
           // leftTab={tabLeft}
         />
       </div>
@@ -90,4 +96,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default LoginPage;
