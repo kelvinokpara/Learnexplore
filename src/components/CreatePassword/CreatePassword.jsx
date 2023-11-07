@@ -140,14 +140,15 @@ const CreatePassword = () => {
         <p className="italic font-poppins pb-4 text-xs text-red-400">
           {confirmPasswordError}
         </p>
+        <div onClick={handleSubmit}>
         <Button
           type="submit"
-          onClick={handleSubmit}
           defButton="blue"
           width="full"
         >
           Reset Password
         </Button>
+        </div>
       </div>
       {isFormSubmitted && (
         <div className="fixed top-0 left-0 w-screen bg-opacity-80 h-screen bg-black">

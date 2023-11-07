@@ -20,9 +20,8 @@ const ResetPassword = () => {
   };
 
   const resetHandler = () => {
-    console.log("yaya toure");
     if (email === "") {
-      alert("hola");
+
       setError("input field cannot be empty");
       return setTimeout(() => {
         setError("");
