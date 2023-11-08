@@ -1,4 +1,7 @@
 // import Checkout from "../../components/Payments/Checkout";
+// import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
+// import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
+
 import {
   FaAngleLeft,
   FaApple,
@@ -6,10 +9,10 @@ import {
   FaFacebook,
   FaGoogle,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Hero from "../../Components/reuseableComponents/Hero/Hero";
 import { positionBoy1 } from "../../assets/Images/position-component";
 
-import Hero from "../../Components/reuseableComponents/Hero/Hero";
-import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <div className="md:flex sm:grid w-full ">
