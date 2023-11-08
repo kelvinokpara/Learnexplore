@@ -41,7 +41,7 @@ const BlogList1 = ({
     </div>) : (<div>
       {/* container 1 */}
 
-      <div className="bg-[white] p-[15px] border w-[400px] rounded-[20px] ">
+      <div className="bg-[white] p-[15px] border w-[390px] rounded-[20px] ">
         <img src={image} alt=""/>
 
         <div className="flex justify-between items-center relative bottom-[60px] pl-[29px] pr-[18px] text-white w-[350px]">

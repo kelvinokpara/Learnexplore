@@ -18,7 +18,7 @@ const Blog = () => {
       ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-[20px]">
+      <div className="flex flex-wrap justify-center gap-[20px] mt-[100px] mb-[100px]">
       {blogPageData && blogPageData.map((blog) => (
 
 <BlogList1 
