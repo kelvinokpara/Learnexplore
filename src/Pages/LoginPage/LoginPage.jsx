@@ -1,8 +1,7 @@
 // import Checkout from "../../components/Payments/Checkout";
 // import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
 // import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
-import Hero from "../../components/reuseableComponents/Hero/Hero";
-import { positionBoy1 } from "../../assets/images/position-component";
+
 import {
   FaAngleLeft,
   FaApple,
@@ -11,6 +10,8 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Hero from "../../Components/reuseableComponents/Hero/Hero";
+import { positionBoy1 } from "../../assets/Images/position-component";
 
 const LoginPage = () => {
   return (
