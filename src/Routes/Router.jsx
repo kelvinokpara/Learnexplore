@@ -18,7 +18,7 @@ const Router = () => {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/home"
         element={
           <Layout>
             <HomePage />
@@ -47,8 +47,6 @@ const Router = () => {
           </Layout>
         }
       />
-
-
       <Route
         path="/payment"
         element={
@@ -58,10 +56,9 @@ const Router = () => {
           </Layout>
         }
       />
-
-=======
+      =======
       <Route
-        path="/blog"
+        path="/"
         element={
           <Layout>
             {" "}
@@ -69,7 +66,6 @@ const Router = () => {
           </Layout>
         }
       />
-
       <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
     </Routes>

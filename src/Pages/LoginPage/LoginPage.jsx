@@ -1,12 +1,4 @@
-
-import Checkout from "../../components/Payments/Checkout";
-import ContactInput from "../../components/reuseableComponents/inputs/ContactInput";
-import EmailInput from "../../components/reuseableComponents/inputs/EmailInput";
-
-const LoginPage = () => {
-  return (
-    <div>
-      <Checkout/>
+// import Checkout from "../../components/Payments/Checkout";
 import {
   FaAngleLeft,
   FaApple,
@@ -14,16 +6,16 @@ import {
   FaFacebook,
   FaGoogle,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { positionBoy1 } from "../../assets/Images/position-component";
+
 import Hero from "../../Components/reuseableComponents/Hero/Hero";
-import studentSignUpImage from "../../assets/images/position-component/position-boy1.png";
-// import tabLeft from "../../assets/images/position-component/tab-left-2.png";
-const ContactPage = () => {
+import { Link } from "react-router-dom";
+const LoginPage = () => {
   return (
     <div className="md:flex sm:grid w-full ">
       <div className=" w-6/12">
         <Hero
-          mainImg={studentSignUpImage}
+          mainImg={positionBoy1}
           // leftTab={tabLeft}
         />
       </div>
@@ -99,4 +91,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default LoginPage;
