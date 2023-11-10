@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 const BlogList1 = ({
   title,
   image,
@@ -7,19 +9,21 @@ const BlogList1 = ({
   date,
   text1,
   text2,
-
+  id,
   isSmallCard  = true
 }) => {
+
   return (
+
     
     <>
     
     {isSmallCard === true ? (<div>
 
       {/* container 2 */}
-      <div className="border bg-white w-[390px] p-[15px] rounded-[20px] mb-[13px]">
+      <div className="border bg-white w-[500px] p-[15px] rounded-[20px] mb-[13px]">
         <div className="flex items-center gap-[15px]">
-          <img src={image} alt="" />
+          <img src={image} alt=""  className="w-[105px] rounded-[10px]"/>
           <div>
             <p className="text-[22px] font-semibold">{title}</p>
             <p className="text-[#7887A8] text-[16px] text-ellipsis">{text1}</p>
@@ -35,13 +39,13 @@ const BlogList1 = ({
               E-learning
             </span>
           </p>
-          <p className="text-[#0AAFFF]">Read Blog</p>
+          <Link to={`/eachblog/${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
         </div>
       </div>
     </div>) : (<div>
       {/* container 1 */}
 
-      <div className="bg-[white] p-[15px] border w-[400px] rounded-[20px] ">
+      <div className="bg-[white] p-[15px] border w-[390px] rounded-[20px] ">
         <img src={image} alt=""/>
 
         <div className="flex justify-between items-center relative bottom-[60px] pl-[29px] pr-[18px] text-white w-[350px]">
@@ -68,7 +72,7 @@ const BlogList1 = ({
               E-learning
             </span>
           </p>
-          <p className="text-[#0AAFFF]">Read Blog</p>
+          <Link to={`/eachblog/${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
         </div>
       </div>
 

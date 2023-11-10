@@ -13,6 +13,7 @@ import Layout from "../components/Layout/Layout";
 
 import PaymentPage from "../Pages/PaymentPage/PaymentPage";
 import BlogPage from "../Pages/BlogPage/BlogPage";
+import EachBlogPage from "../Pages/EachBlogPage/EachBlogPage";
 
 const Router = () => {
   return (
@@ -38,6 +39,7 @@ const Router = () => {
       <Route path="/studentSignUp" element={<StudentSignUp />} />
       <Route path="/teacherSignUp" element={<TeacherSignUp />} />
       <Route path="/resetPassword" element={<ResetPasswordPage />} />
+      <Route path="/eachblog/:id" element={<EachBlogPage />} />
       <Route
         path="/contact"
         element={
