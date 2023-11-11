@@ -13,12 +13,13 @@ import Layout from "../components/Layout/Layout";
 
 import PaymentPage from "../Pages/PaymentPage/PaymentPage";
 import BlogPage from "../Pages/BlogPage/BlogPage";
+import EachBlogPage from "../Pages/EachBlogPage/EachBlogPage";
 
 const Router = () => {
   return (
     <Routes>
       <Route
-        path="/home"
+        path="/"
         element={
           <Layout>
             <HomePage />
@@ -38,6 +39,17 @@ const Router = () => {
       <Route path="/studentSignUp" element={<StudentSignUp />} />
       <Route path="/teacherSignUp" element={<TeacherSignUp />} />
       <Route path="/resetPassword" element={<ResetPasswordPage />} />
+
+      <Route
+        path="/blog/:id"
+        element={
+          <Layout>
+            {" "}
+            <EachBlogPage />
+          </Layout>
+        }
+      />
+
       <Route
         path="/contact"
         element={
@@ -56,9 +68,8 @@ const Router = () => {
           </Layout>
         }
       />
-      =======
       <Route
-        path="/"
+        path="/blog"
         element={
           <Layout>
             {" "}

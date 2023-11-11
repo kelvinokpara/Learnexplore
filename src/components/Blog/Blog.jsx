@@ -18,11 +18,11 @@ const Blog = () => {
       ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-[20px]">
-      {blogPageData && blogPageData.map((blog) => (
+      <div className="flex flex-wrap justify-center gap-[20px] mt-[100px] mb-[100px]">
+      {blogPageData && blogPageData.map((blog,id) => (
 
 <BlogList1 
-key={blog.id}
+key={id}
 title={blog.title}
 image={blog.image}
 profile_image={blog.profile_image}
@@ -30,6 +30,7 @@ profile_name={blog.profile_name}
 date={blog.date}
 text1={blog.text1}
 text2={blog.text2}
+id={blog.id}
 
 isSmallCard={false}
 />
