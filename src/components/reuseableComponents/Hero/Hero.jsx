@@ -8,7 +8,6 @@ import {
   positionEllipse,
 } from "../../../assets/Images/position-component";
 
-
 const Hero = ({ mainImg, leftTab, rightTab, bottomTab, bg }) => {
   return (
     <div

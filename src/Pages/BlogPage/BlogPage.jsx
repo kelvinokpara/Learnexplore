@@ -1,11 +1,13 @@
-import Blog from "../../components/Blog/Blog"
-
+import Blog from "../../components/Blog/Blog";
+import LandingPage from "../LandingPage/LandingPage";
 const BlogPage = () => {
   return (
     <div>
-        <Blog/>
-    </div>
-  )
-}
+      {/* <Blog/> */}
 
-export default BlogPage
+      <LandingPage />
+    </div>
+  );
+};
+
+export default BlogPage;
