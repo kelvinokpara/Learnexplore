@@ -11,13 +11,14 @@ import {
   blog9,
   blog10,
   blog11,
+  profile_img,
 } from "../images/Blogs-images/index.js";
 
 export const blogPageData = [
   {
     id: 1,
     image: blog0,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -27,7 +28,7 @@ export const blogPageData = [
   {
     id: 2,
     image: blog1,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -37,7 +38,7 @@ export const blogPageData = [
   {
     id: 3,
     image: blog2,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -47,7 +48,7 @@ export const blogPageData = [
   {
     id: 4,
     image: blog3,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -57,7 +58,7 @@ export const blogPageData = [
   {
     id: 5,
     image: blog4,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -67,7 +68,7 @@ export const blogPageData = [
   {
     id: 6,
     image: blog5,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -77,7 +78,7 @@ export const blogPageData = [
   {
     id: 7,
     image: blog6,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -87,7 +88,7 @@ export const blogPageData = [
   {
     id: 8,
     image: blog7,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -97,7 +98,7 @@ export const blogPageData = [
   {
     id: 9,
     image: blog8,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -107,7 +108,7 @@ export const blogPageData = [
   {
     id: 10,
     image: blog9,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -117,7 +118,7 @@ export const blogPageData = [
   {
     id: 11,
     image: blog10,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",
@@ -127,7 +128,7 @@ export const blogPageData = [
   {
     id: 12,
     image: blog11,
-    profile_image: "../images/Blogs-images/profile_img.png",
+    profile_image: profile_img,
     profile_name: "Roy Nina",
     date: "12 June, 2022",
     title: "Shannon Tipton's Learning Rebels Blog",

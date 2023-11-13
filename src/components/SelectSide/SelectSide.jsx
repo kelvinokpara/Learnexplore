@@ -4,13 +4,16 @@ import teacher from "../../assets/Icons/userlog-icons/teacher.png";
 import Button from "../../components/reuseableComponents/Button/Button.jsx";
 import positiongirl1 from "../../assets/images/position-component/positiongirl1.png";
 import tickCircle from "../../assets/Icons/tickCircle.png";
-// import LoginPage from "../../Pages/LoginPage/LoginPage";
-// import TeacherSignUp from "../../Pages/Teachers/TeacherSignUpPage/TeacherSignUp";
+
+import { useNavigate } from "react-router-dom";
 
 import { useState } from "react";
 const SelectSide = () => {
-  // const Enter1 = true;
-  // const Enter2 = true;
+  const [role, setRole] = useState(null);
+
+  const navigate = useNavigate();
+
+  console.log(role)
 
   const [isdisabled, setIsDisabled] = useState(true);
   return (
@@ -25,30 +28,26 @@ const SelectSide = () => {
             Select User Category
           </p>
 
-
-
-  <div
-  className="flex items-center font-[poppins] gap-[30px] border rounded-[20px] w-[500px] h-[130px] mb-[27px] hover:bg-studentHue transition-all duration-200"
-  onClick={() => setIsDisabled((prev) => !prev)}
->
-  <img
-    src={student}
-    alt="student"
-    className="hover:bg-[#F8C069] rounded-[20px] ml-[15px]"
-  />
-  <span className="text-[28px] font-[600] hover:text-white">
-    Student
-  </span>
-  <span className="relative bottom-[40px] left-[170px]">
-    <img src={tickCircle} alt="" />
-  </span>
-</div>
-
-          
+          <div
+            className="flex items-center font-[poppins] gap-[30px] border rounded-[20px] w-[500px] h-[130px] mb-[27px] hover:bg-studentHue transition-all duration-200"
+            onClick={() => {setIsDisabled((prev) => !prev);  setRole("student")}}
+          >
+            <img
+              src={student}
+              alt="student"
+              className="hover:bg-[#F8C069] rounded-[20px] ml-[15px]"
+            />
+            <span className="text-[28px] font-[600] hover:text-white">
+              Student
+            </span>
+            <span className="relative bottom-[40px] left-[170px]">
+              <img src={tickCircle} alt="" />
+            </span>
+          </div>
 
           <div
             className="flex items-center font-[poppins] gap-[30px] border rounded-[20px] w-[500px] h-[130px] mb-[27px]  hover:bg-teacherHue transition-all duration-200"
-            onClick={() => setIsDisabled((prev) => !prev)}
+            onClick={() =>{setIsDisabled((prev) => !prev) ; setRole("teacher")}}
           >
             <img
               src={teacher}
@@ -65,7 +64,22 @@ const SelectSide = () => {
 
           {/* <button className="">Signup</button> */}
           <div>
-            <Button width="full" defButton="blue" disable={isdisabled}>
+            <Button
+              width="full"
+              defButton="blue"
+              disable={isdisabled}
+              onClick={() =>
+                {
+                role === "student"
+                  ? navigate("/login")
+                  : role === "teacher"
+                  ? navigate("/teacherSignUp")
+                  : ""
+
+                return  console.log('hello')
+                }
+              }
+            >
               Sign up
             </Button>
           </div>
