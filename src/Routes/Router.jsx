@@ -41,7 +41,7 @@ const Router = () => {
       <Route path="/resetPassword" element={<ResetPasswordPage />} />
 
       <Route
-        path="/blog/:id"
+        path="/eachblog/:id"
         element={
           <Layout>
             {" "}
