@@ -10,6 +10,7 @@ import blog8 from "./blog8.png";
 import blog9 from "./blog9.png";
 import blog10 from "./blog10.png";
 import blog11 from "./blog11.png";
+import profile_img from "./profile_img.png";
 
 export {
   blog0,
@@ -24,4 +25,5 @@ export {
   blog9,
   blog10,
   blog11,
+  profile_img,
 };
