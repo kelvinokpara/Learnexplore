@@ -1,34 +1,53 @@
+import teaching from "../Icons/features-icons/features-scholar.png";
+import user from "../Icons/features-icons/features-people.png";
+import support from "../Icons/features-icons/features-numTag.png";
+import courses from "../Icons/features-icons/features-book.png";
+import scholar from "../Icons/why-choose-icons/features-scholar.png";
+import badge from "../Icons/why-choose-icons/features-badge.png";
+import tag from "../Icons/why-choose-icons/features-tag.png";
+import stat from "../Icons/why-choose-icons/features-stat.png";
+import maths from "../Icons/category-icons/maths.png";
+import art from "../Icons/category-icons/art.png";
+import science from "../Icons/category-icons/science.png";
+import tech from "../Icons/category-icons/tech.png";
+import music from "../Icons/category-icons/music.png";
+import dance from "../Icons/category-icons/dance.png";
+import communication from "../Icons/category-icons/communication.png";
+import study from "../Icons/category-icons/social-study.png";
+import language from "../Icons/category-icons/language.png";
+import physics from "../Icons/category-icons/physics.png";
+
 export const features1 = [
   {
-    icon: "../Icons/features-icons/features-scholar.png",
+    icon: teaching,
     label: "Online Teaching",
   },
-  { icon: "../Icons/features-icons/features-people.png", label: "100K+ Users" },
+  { icon: user, label: "100K+ Users" },
   {
-    icon: "../Icons/features-icons/features-numTag.png",
+    icon: support,
     label: "24*7 Support",
   },
-  { icon: "../Icons/features-icons/features-book.png", label: "180+ Courses" },
+  { icon: courses, label: "180+ Courses" },
 ];
 //
 export const features2 = [
   {
-    icon: "../Icons/why-choose-icons/features-scholar.png",
+    icon: scholar,
     label: "Well structured programme",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
   },
   {
-    icon: "../Icons/why-choose-icons/features-badge.png",
+    icon: badge,
     label: "Learn From Certified Tutors",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
   },
   {
-    icon: "../Icons/why-choose-icons/features-tag.png",
+    icon: tag,
     label: "Get membership",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
   },
   {
-    icon: "../Icons/why-choose-icons/features-stat.png",
+    icon: stat,
     label: "Track Earning & Traffic",
     desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
   },
@@ -36,43 +55,53 @@ export const features2 = [
 //
 export const category = [
   {
-    icon: "../Icons/category-icons/maths.png",
+    icon: maths,
     label: "Maths",
+    bg: "#FF7D511A",
   },
   {
-    icon: "../Icons/category-icons/art.png",
+    icon: art,
     label: "Art",
+    bg: "#F2EEFD",
   },
   {
-    icon: "../Icons/category-icons/science.png",
+    icon: science,
     label: "Science",
+    bg: "#E7F7FF",
   },
   {
-    icon: "../Icons/category-icons/tech.png",
+    icon: tech,
     label: "Technology",
+    bg: "#FFC41B26",
   },
   {
-    icon: "../Icons/category-icons/music.png",
+    icon: music,
     label: "Music",
+    bg: "#FF7D511A",
   },
   {
-    icon: "../Icons/category-icons/dance.png",
+    icon: dance,
     label: "Dance",
+    bg: "#E7F7FF",
   },
   {
-    icon: "../Icons/category-icons/communication.png",
+    icon: communication,
     label: "Communication",
+    bg: "#FF7D511A",
   },
   {
-    icon: "../Icons/category-icons/social-study.png",
+    icon: study,
     label: "Social Study",
+    bg: "#FFC41B26",
   },
   {
-    icon: "../Icons/category-icons/language.png",
+    icon: language,
     label: "Language",
+    bg: "#F2EEFD",
   },
   {
-    icon: "../Icons/category-icons/physics.png",
+    icon: physics,
     label: "Physics",
+    bg: "#E7F7FF",
   },
 ];
