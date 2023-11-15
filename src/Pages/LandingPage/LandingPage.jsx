@@ -122,7 +122,7 @@ const LandingPage = () => {
                 Popular courses
               </button>
               <div className=" ">
-                <button className=" h-14 px-4  py-4 gap-1 bg-[#7551E9] rounded-full left-7 absolute left-[900px]">
+                <button className=" h-14 px-4  py-4 gap-1 bg-[#7551E9] rounded-full absolute left-[900px]">
                   Recently added Courses
                 </button>
               </div>

@@ -2,6 +2,7 @@ import { blogCategoryData } from "../../assets/Data/blogData";
 import BlogList1 from "../reuseableComponents/blogs/blog1";
 import { blogPageData } from "../../assets/Data/blogPageData";
 
+
 const Blog = () => {
   return (
     <div>

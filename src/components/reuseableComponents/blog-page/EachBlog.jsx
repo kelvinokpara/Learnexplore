@@ -1,6 +1,7 @@
 import BlogList1 from "../blogs/blog1";
 import { blogPageData } from "../../../assets/Data/blogPageData";
 import { useParams, Link } from "react-router-dom";
+import Back from "../back/Back";
 
 
 const EachBlog = () => {
@@ -26,7 +27,7 @@ const EachBlog = () => {
     <div className="flex justify-center ml-[50px] mr-[50px] gap-[40px] mt-[50px]">
      
       <div>
-     <Link to={'/'}><div className="text-[16px] mb-[45px]">Back</div></Link> 
+     <Link to={'/blog'}><div className=" mb-[45px]"><Back/></div></Link> 
         {singleBlog.map((blog, id) => {
           return (
             <>

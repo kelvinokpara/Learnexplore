@@ -7,7 +7,7 @@ const BlogList1 = ({
   date,
   text1,
   text2,
-
+id,
   isSmallCard = true,
 }) => {
   return (
@@ -19,7 +19,7 @@ const BlogList1 = ({
             <div className="flex items-center gap-[15px]">
               <img src={image} alt="" className="h-[70px] rounded-xl " />
               <div className="w-[435px] h-[70x] ">
-                <p className="text-[15px] font-semibold">{title}</p>
+                <p className="text-[22px] font-semibold">{title}</p>
                 <p className="text-[#0a0f19] text-[20px] text-ellipsis">
                   {text1}
                 </p>
@@ -35,7 +35,7 @@ const BlogList1 = ({
                   E-learning
                 </span>
               </p>
-              <p className="text-[#0AAFFF]">Read Blog</p>
+              <Link to={`/eachblog/:${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const BlogList1 = ({
                   E-learning
                 </span>
               </p>
-              <p className="text-[#0AAFFF]">Read Blog</p>
+              <Link to={`/eachblog/:${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
             </div>
           </div>
         </div>
