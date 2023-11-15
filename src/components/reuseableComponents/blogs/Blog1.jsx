@@ -7,7 +7,7 @@ const BlogList1 = ({
   date,
   text1,
   text2,
-
+id,
   isSmallCard = true,
 }) => {
   return (
@@ -35,7 +35,7 @@ const BlogList1 = ({
                   E-learning
                 </span>
               </p>
-              <p className="text-[#0AAFFF]">Read Blog</p>
+              <Link to={`/eachblog/:${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const BlogList1 = ({
                   E-learning
                 </span>
               </p>
-              <p className="text-[#0AAFFF]">Read Blog</p>
+              <Link to={`/eachblog/:${id}`}><p className="text-[#0AAFFF]">Read Blog</p></Link>
             </div>
           </div>
         </div>
