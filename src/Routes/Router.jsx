@@ -10,6 +10,7 @@ import ContactPage from "../Pages/ContactPage/ContactPage";
 import TermsAndCondition from "../Pages/Terms & Condition/TermsAndCondition";
 import PrivacyPolicy from "../Pages/PrivacyPolicyPage/PrivacyPolicy";
 import Layout from "../components/Layout/Layout";
+import LandingPage from "../Pages/LandingPage/LandingPage";
 
 import PaymentPage from "../Pages/PaymentPage/PaymentPage";
 import BlogPage from "../Pages/BlogPage/BlogPage";
@@ -22,7 +23,7 @@ const Router = () => {
         path="/"
         element={
           <Layout>
-            <HomePage />
+            <LandingPage />
           </Layout>
         }
       />

@@ -19,7 +19,7 @@ id,
             <div className="flex items-center gap-[15px]">
               <img src={image} alt="" className="h-[70px] rounded-xl " />
               <div className="w-[435px] h-[70x] ">
-                <p className="text-[15px] font-semibold">{title}</p>
+                <p className="text-[22px] font-semibold">{title}</p>
                 <p className="text-[#0a0f19] text-[20px] text-ellipsis">
                   {text1}
                 </p>
