@@ -26,7 +26,7 @@ const LandingPage = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <div className="flex rounded-[30px] w-[1680px] h-[702px] top-28 items-center justify-between bg-[#F1FAFF]">
+        <div className="flex rounded-[30px] w-[1300px] h-[700px] top-28 items-center justify-between bg-[#F1FAFF]">
           <div className="w-[647px] ml-20 h-[414px] top-[266px] gap-[36px] ">
             <div>
               <h2 className="  text-[#141736] font-bold text-4xl">
@@ -60,7 +60,7 @@ const LandingPage = () => {
         })}
       </div>
       <div>
-        <div className="   bg-gradient-to-r from-[#F8F9FC] to-[#F8F9FC00]">
+        <div className=" w-[1300px]  bg-gradient-to-r from-[#F8F9FC] to-[#F8F9FC00]">
           <div className="flex justify-center items-center">
             <div className="flex justify-center mr-[100px]">
               <div>
@@ -128,7 +128,7 @@ const LandingPage = () => {
               </div>
             </div>
             {/* title, lessons, duration, price, image, teacher */}
-            <div className=" xl:grid-cols-4 grid md:grid-cols-3 grid-cols-2">
+            <div className="w-[1300px] xl:grid-cols-4 grid md:grid-cols-3 grid-cols-2">
               {courses.map((data, index) => {
                 return (
                   <CoursesList
@@ -174,8 +174,8 @@ const LandingPage = () => {
             Become <span className=" ml-2 text-[#0AAFFF]">Tutor</span>
           </h2>
         </div>
-        <div className="flex justify-center gap-14 ">
-          <div className=" flex w-[820px] h-[535px] gap-8">
+        <div className="flex justify-center gap-5 ">
+          <div className=" flex  w-4/5 gap-2">
             {blogPage.map((blogPageData) => {
               return (
                 <BlogList1
@@ -193,7 +193,7 @@ const LandingPage = () => {
             })}
           </div>
           <div>
-            <div className=" w-[588px] h-[535px] gap-8 ">
+            <div className=" w-1/5 gap-2 ">
               {blogData.map((blogPageData) => {
                 return (
                   <BlogList1
@@ -212,8 +212,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className=" ml-20 flex w-[1439.37px] h-[724.15px] top-[4785px] left-[240px] justify-between items-center">
-        <div className="w-[496.56px] h-[329px] ">
+      <div className=" ml-20 flex w-[1300px] h-[724.15px] top-[4785px] left-[240px] justify-between items-center">
+        <div className="w-2/4 h-[329px] ">
           <h2 className=" text-[#141736] font-bold text-4xl">
             Become <span className=" ml-2 text-[#0AAFFF]">Tutor</span>
           </h2>
@@ -239,7 +239,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-2/4">
           <Hero bg={"bg-transparent "} mainImg={positionTeacher2} />
         </div>
       </div>
